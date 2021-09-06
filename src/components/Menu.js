@@ -1,28 +1,15 @@
 import React from 'react'
-import { useState } from 'react'
 
 const Menu = () => {
-    const [showMenu, setShowMenu] = useState(false)
-    const toggleMenu = () => {
-        setShowMenu(!showMenu)
-    }
-
     return (
-        <div>
-            <div className={`menu-btn ${showMenu ? "close" : ""}`} onClick={toggleMenu}>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-            <nav className={`menu ${showMenu ? "show" : ""}`}>
-                <ul className={`menu-nav ${showMenu ? "show" : ""}`}>
-                    <li className={`nav-item ${showMenu ? "show" : ""}`}>Welcome</li>
-                    <li className={`nav-item ${showMenu ? "show" : ""}`}>Menu</li>
-                    <li className={`nav-item ${showMenu ? "show" : ""}`}>Resevations</li>
-                    <li className={`nav-item ${showMenu ? "show" : ""}`}>Contact Us</li>
-                </ul>
-            </nav>
-        </div>
+        <nav className="nav-bar">
+            <ul className="nav-list">
+                <li className="nav-item"><a href="#profile" className="nav-link">Blue Flamingo</a></li>
+                <li className="nav-item"><a href="#something" className="nav-link">Something</a></li>
+                <li className="nav-item"><a href="#services" className="nav-link">Services</a></li>
+                <li className="nav-item"><a href="#contact" className="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
     )
 }
 

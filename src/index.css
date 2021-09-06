@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +28,34 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 40px;
+}
+
+.nav-bar {
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #5d7ed2;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #108ce2;
+  text-decoration: underline;
 }
 
 .btn {
@@ -47,8 +77,8 @@ header {
 
 .carousel {
   position: relative;
-  top: 505;
   width: 100%;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +87,10 @@ header {
 
 .image {
   width: 100%;
-  height: 100%;
+  height: 500px;
   transition: all 0.5s ease-in-out;
 }
+
 .right-arrow,
 .left-arrow {
   position: absolute;
@@ -82,11 +113,14 @@ header {
   color: #108ce2;
   transform: scale(1.2);
 }
+
 .topic {
   position: absolute;
+  width: 70%;
   top: 50%;
+  left: 15%;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -96,6 +130,101 @@ header {
 }
 
 .slide.active {
+  opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  border-bottom: 2px solid #5d7ed2;
+  color: #5d7ed2;
+  font-size: 1rem;
+}
+
+.content {
+  color: #5d7ed2;
+  max-height: 0;
+  overflow: hidden;
+  padding: 5px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.chevron-right {
+  color: #5d7ed2;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+
+.chevron-right.rotate {
+  transform: rotate(90deg);
+  transition: 0.5s ease;
+}
+
+footer {
+  width: 100%;
+  height: 25px;
+  color: #5d7ed2;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer span {
+  color: #108ce2;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  .topic {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .image {
+    height: 700px;
+  }
+
+  .carousel {
+    height: 750px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .carousel {
+    height: 1000px;
+  }
+
+  .image {
+    height: 900px;
+  }
 }

@@ -1,7 +1,10 @@
+import Menu from "./Menu"
+
 const Header = ({ title }) => {
     return (
         <header>
             <h3 style={{ color: "#108Ce2" }}>{title}</h3>
+            <Menu />
         </header>
     )
 }
