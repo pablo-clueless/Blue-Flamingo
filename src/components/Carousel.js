@@ -18,7 +18,7 @@ const Carousel = ({ slides }) => {
     }
 
     return (
-        <section className='carousel'>
+        <div className='carousel'>
             <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             {CarouselData.map((slide, index) => {
@@ -29,7 +29,7 @@ const Carousel = ({ slides }) => {
                     </div>
                 )
             })}
-        </section>
+        </div>
     )
 }
 
