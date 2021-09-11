@@ -19,7 +19,9 @@ const Services = () => {
                 <p>
                     Discover the ideal setting for a conference or wedding in Lagos. Our hotel provides four meeting rooms and two boardrooms with the latest audiovisual equipment and free Wi-Fi. The largest room hosts up to 110 guests. Ideal for intimate gatherings, the two boardrooms can accommodate up to ten people each. Get your wedding photos taken or enjoy a break on an outdoor terrace that showcases views of Lagos.
                 </p>
-                <Button text='Book a Space' color='#108ce2'/>
+                <a href="#reservations">
+                    <Button text='Book a Space' color='#108ce2' />
+                </a>
             </div>
             <div className="card">
                 <img src="https://images.unsplash.com/photo-1598550489906-85edc42981c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaChevronDown, FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
 import Button from './Button'
 import logo from '../images/logo.png'
 
@@ -30,14 +30,30 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="grid_c">
+            <div className="grid_c c">
                 <img src={logo} alt="" />
                 <div>
-                    <div className="flex_b b"></div>
-                    <div className="flex_b b"></div>
-                    <div className="flex_b b"></div>
-                    <div className="flex_b b"></div>
-                    <div className="flex_b b"></div>
+                    <div className="flex_b b">
+                        <h6>FAQs</h6>
+                        <FaChevronDown className='acc-btn' />
+                    </div>
+                    <div className="flex_b b">
+                        <h6>QUICK LINKS</h6>
+                        <FaChevronDown className='acc-btn' />
+                    </div>
+                    <div className="flex_b b">
+                        <h6>LEGAL</h6>
+                        <FaChevronDown className='acc-btn' />
+                    </div>
+
+                    <div className="flex_b b">
+                        <h6>EMPLOYMENT OPPORTUNiTIES</h6>
+                        <FaChevronDown className='acc-btn' />
+                    </div>
+                    <div className="flex_b b">
+                        <h6>HELP</h6>
+                        <FaChevronDown className='acc-btn' />
+                    </div>
                 </div>
             </div>
         </div>

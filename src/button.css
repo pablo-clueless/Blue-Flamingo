@@ -16,3 +16,25 @@
 .btn:hover {
   transform: scale(0.98);
 }
+
+.btn-sm {
+  height: 25px;
+  display: inline-block;
+  background: #fff;
+  color: #108ce2;
+  border: none;
+  padding: 2px 5px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 2px solid #108ce2;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: inherit;
+  transition: 0.5s ease;
+}
+
+.btn-sm:hover {
+  background: #108ce2;
+  color: #fff;
+}
